@@ -1,0 +1,11 @@
+VAR
+	timer : UDINT := 0;
+	speed_ctrl : INT := -10000;
+	min_task : INT := 7000;
+	desired_speed : INT := 0;
+	axis_Z : FB_Axis;
+	coil_powered : BOOL := FALSE;
+	coil_pwm_value : {REDUND_UNREPLICABLE} INT := 200;
+	fb_controller : FB_Controller;
+	pwm_period : {REDUND_UNREPLICABLE} UINT := 200;
+END_VAR
